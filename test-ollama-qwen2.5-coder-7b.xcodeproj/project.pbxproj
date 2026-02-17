@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		D65C399D2F44B6CC00CA86FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D65C39802F44B6C900CA86FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65C39872F44B6C900CA86FE;
+			remoteInfo = "test-ollama-qwen2.5-coder-7b";
+		};
+		D65C39A72F44B6CC00CA86FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D65C39802F44B6C900CA86FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65C39872F44B6C900CA86FE;
+			remoteInfo = "test-ollama-qwen2.5-coder-7b";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D65C39882F44B6C900CA86FE /* test-ollama-qwen2.5-coder-7b.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-ollama-qwen2.5-coder-7b.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65C399C2F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-ollama-qwen2.5-coder-7bTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65C39A62F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-ollama-qwen2.5-coder-7bUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D65C39AE2F44B6CC00CA86FE /* Exceptions for "test-ollama-qwen2.5-coder-7b" folder in "test-ollama-qwen2.5-coder-7b" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D65C39872F44B6C900CA86FE /* test-ollama-qwen2.5-coder-7b */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D65C398A2F44B6C900CA86FE /* test-ollama-qwen2.5-coder-7b */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D65C39AE2F44B6CC00CA86FE /* Exceptions for "test-ollama-qwen2.5-coder-7b" folder in "test-ollama-qwen2.5-coder-7b" target */,
+			);
+			path = "test-ollama-qwen2.5-coder-7b";
+			sourceTree = "<group>";
+		};
+		D65C399F2F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "test-ollama-qwen2.5-coder-7bTests";
+			sourceTree = "<group>";
+		};
+		D65C39A92F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "test-ollama-qwen2.5-coder-7bUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D65C39852F44B6C900CA86FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C39992F44B6CC00CA86FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C39A32F44B6CC00CA86FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D65C397F2F44B6C900CA86FE = {
+			isa = PBXGroup;
+			children = (
+				D65C398A2F44B6C900CA86FE /* test-ollama-qwen2.5-coder-7b */,
+				D65C399F2F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bTests */,
+				D65C39A92F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bUITests */,
+				D65C39892F44B6C900CA86FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D65C39892F44B6C900CA86FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D65C39882F44B6C900CA86FE /* test-ollama-qwen2.5-coder-7b.app */,
+				D65C399C2F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bTests.xctest */,
+				D65C39A62F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D65C39872F44B6C900CA86FE /* test-ollama-qwen2.5-coder-7b */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65C39AF2F44B6CC00CA86FE /* Build configuration list for PBXNativeTarget "test-ollama-qwen2.5-coder-7b" */;
+			buildPhases = (
+				D65C39842F44B6C900CA86FE /* Sources */,
+				D65C39852F44B6C900CA86FE /* Frameworks */,
+				D65C39862F44B6C900CA86FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D65C398A2F44B6C900CA86FE /* test-ollama-qwen2.5-coder-7b */,
+			);
+			name = "test-ollama-qwen2.5-coder-7b";
+			packageProductDependencies = (
+			);
+			productName = "test-ollama-qwen2.5-coder-7b";
+			productReference = D65C39882F44B6C900CA86FE /* test-ollama-qwen2.5-coder-7b.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D65C399B2F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65C39B42F44B6CC00CA86FE /* Build configuration list for PBXNativeTarget "test-ollama-qwen2.5-coder-7bTests" */;
+			buildPhases = (
+				D65C39982F44B6CC00CA86FE /* Sources */,
+				D65C39992F44B6CC00CA86FE /* Frameworks */,
+				D65C399A2F44B6CC00CA86FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D65C399E2F44B6CC00CA86FE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D65C399F2F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bTests */,
+			);
+			name = "test-ollama-qwen2.5-coder-7bTests";
+			packageProductDependencies = (
+			);
+			productName = "test-ollama-qwen2.5-coder-7bTests";
+			productReference = D65C399C2F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D65C39A52F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65C39B72F44B6CC00CA86FE /* Build configuration list for PBXNativeTarget "test-ollama-qwen2.5-coder-7bUITests" */;
+			buildPhases = (
+				D65C39A22F44B6CC00CA86FE /* Sources */,
+				D65C39A32F44B6CC00CA86FE /* Frameworks */,
+				D65C39A42F44B6CC00CA86FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D65C39A82F44B6CC00CA86FE /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D65C39A92F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bUITests */,
+			);
+			name = "test-ollama-qwen2.5-coder-7bUITests";
+			packageProductDependencies = (
+			);
+			productName = "test-ollama-qwen2.5-coder-7bUITests";
+			productReference = D65C39A62F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D65C39802F44B6C900CA86FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					D65C39872F44B6C900CA86FE = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					D65C399B2F44B6CC00CA86FE = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = D65C39872F44B6C900CA86FE;
+					};
+					D65C39A52F44B6CC00CA86FE = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = D65C39872F44B6C900CA86FE;
+					};
+				};
+			};
+			buildConfigurationList = D65C39832F44B6C900CA86FE /* Build configuration list for PBXProject "test-ollama-qwen2.5-coder-7b" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D65C397F2F44B6C900CA86FE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D65C39892F44B6C900CA86FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D65C39872F44B6C900CA86FE /* test-ollama-qwen2.5-coder-7b */,
+				D65C399B2F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bTests */,
+				D65C39A52F44B6CC00CA86FE /* test-ollama-qwen2.5-coder-7bUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D65C39862F44B6C900CA86FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C399A2F44B6CC00CA86FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C39A42F44B6CC00CA86FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D65C39842F44B6C900CA86FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C39982F44B6CC00CA86FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C39A22F44B6CC00CA86FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D65C399E2F44B6CC00CA86FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65C39872F44B6C900CA86FE /* test-ollama-qwen2.5-coder-7b */;
+			targetProxy = D65C399D2F44B6CC00CA86FE /* PBXContainerItemProxy */;
+		};
+		D65C39A82F44B6CC00CA86FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65C39872F44B6C900CA86FE /* test-ollama-qwen2.5-coder-7b */;
+			targetProxy = D65C39A72F44B6CC00CA86FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D65C39B02F44B6CC00CA86FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "test-ollama-qwen2.5-coder-7b/test_ollama_qwen2_5_coder_7b.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRCF76NS2C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "test-ollama-qwen2.5-coder-7b/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oho.test-ollama-qwen2-5-coder-7b";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D65C39B12F44B6CC00CA86FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "test-ollama-qwen2.5-coder-7b/test_ollama_qwen2_5_coder_7b.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRCF76NS2C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "test-ollama-qwen2.5-coder-7b/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oho.test-ollama-qwen2-5-coder-7b";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D65C39B22F44B6CC00CA86FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZRCF76NS2C;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D65C39B32F44B6CC00CA86FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZRCF76NS2C;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D65C39B52F44B6CC00CA86FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRCF76NS2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oho.test-ollama-qwen2-5-coder-7bTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-ollama-qwen2.5-coder-7b.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/test-ollama-qwen2.5-coder-7b";
+			};
+			name = Debug;
+		};
+		D65C39B62F44B6CC00CA86FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRCF76NS2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oho.test-ollama-qwen2-5-coder-7bTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-ollama-qwen2.5-coder-7b.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/test-ollama-qwen2.5-coder-7b";
+			};
+			name = Release;
+		};
+		D65C39B82F44B6CC00CA86FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRCF76NS2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oho.test-ollama-qwen2-5-coder-7bUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "test-ollama-qwen2.5-coder-7b";
+			};
+			name = Debug;
+		};
+		D65C39B92F44B6CC00CA86FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRCF76NS2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oho.test-ollama-qwen2-5-coder-7bUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "test-ollama-qwen2.5-coder-7b";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D65C39832F44B6C900CA86FE /* Build configuration list for PBXProject "test-ollama-qwen2.5-coder-7b" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C39B22F44B6CC00CA86FE /* Debug */,
+				D65C39B32F44B6CC00CA86FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65C39AF2F44B6CC00CA86FE /* Build configuration list for PBXNativeTarget "test-ollama-qwen2.5-coder-7b" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C39B02F44B6CC00CA86FE /* Debug */,
+				D65C39B12F44B6CC00CA86FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65C39B42F44B6CC00CA86FE /* Build configuration list for PBXNativeTarget "test-ollama-qwen2.5-coder-7bTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C39B52F44B6CC00CA86FE /* Debug */,
+				D65C39B62F44B6CC00CA86FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65C39B72F44B6CC00CA86FE /* Build configuration list for PBXNativeTarget "test-ollama-qwen2.5-coder-7bUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C39B82F44B6CC00CA86FE /* Debug */,
+				D65C39B92F44B6CC00CA86FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D65C39802F44B6C900CA86FE /* Project object */;
+}
