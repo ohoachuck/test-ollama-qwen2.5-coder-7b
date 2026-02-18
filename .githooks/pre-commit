@@ -1,0 +1,162 @@
+#!/bin/bash
+
+# Hook pre-commit pour détecter les informations sensibles
+# Ce script vérifie les fichiers staged pour détecter des données sensibles
+
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+echo -e "${YELLOW}🔍 Vérification des informations sensibles...${NC}"
+
+# Patterns à détecter (regex)
+PATTERNS=(
+    # Clés API et tokens
+    "api[_-]?key['\"]?\s*[:=]\s*['\"][a-zA-Z0-9_\-]{20,}['\"]"
+    "api[_-]?secret['\"]?\s*[:=]\s*['\"][a-zA-Z0-9_\-]{20,}['\"]"
+    "access[_-]?token['\"]?\s*[:=]\s*['\"][a-zA-Z0-9_\-]{20,}['\"]"
+    "auth[_-]?token['\"]?\s*[:=]\s*['\"][a-zA-Z0-9_\-]{20,}['\"]"
+    "bearer['\"]?\s*[:=]\s*['\"][a-zA-Z0-9_\-]{20,}['\"]"
+    
+    # Mots de passe
+    "password['\"]?\s*[:=]\s*['\"][^'\"]{3,}['\"]"
+    "passwd['\"]?\s*[:=]\s*['\"][^'\"]{3,}['\"]"
+    "pwd['\"]?\s*[:=]\s*['\"][^'\"]{3,}['\"]"
+    
+    # Clés privées
+    "-----BEGIN (RSA |DSA |EC )?PRIVATE KEY-----"
+    "-----BEGIN OPENSSH PRIVATE KEY-----"
+    
+    # AWS
+    "AKIA[0-9A-Z]{16}"
+    "aws[_-]?access[_-]?key[_-]?id"
+    "aws[_-]?secret[_-]?access[_-]?key"
+    
+    # Tokens GitHub
+    "ghp_[a-zA-Z0-9]{36}"
+    "gho_[a-zA-Z0-9]{36}"
+    "ghu_[a-zA-Z0-9]{36}"
+    "ghs_[a-zA-Z0-9]{36}"
+    "ghr_[a-zA-Z0-9]{36}"
+    
+    # Tokens GitLab
+    "glpat-[a-zA-Z0-9_\-]{20,}"
+    
+    # Slack tokens
+    "xox[baprs]-[0-9a-zA-Z\-]+"
+    
+    # Google API
+    "AIza[0-9A-Za-z\-_]{35}"
+    
+    # Stripe
+    "sk_live_[0-9a-zA-Z]{24,}"
+    "pk_live_[0-9a-zA-Z]{24,}"
+    
+    # Tokens génériques
+    "token['\"]?\s*[:=]\s*['\"][a-zA-Z0-9_\-]{20,}['\"]"
+    "secret['\"]?\s*[:=]\s*['\"][a-zA-Z0-9_\-]{20,}['\"]"
+    
+    # URLs avec credentials
+    "https?://[a-zA-Z0-9]+:[a-zA-Z0-9]+@"
+    
+    # Adresses email sensibles (optionnel)
+    # "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+)
+
+# Fichiers à ignorer
+IGNORE_PATTERNS=(
+    "\.lock$"
+    "package-lock\.json$"
+    "yarn\.lock$"
+    "\.min\.js$"
+    "\.min\.css$"
+    "\.map$"
+    "\.png$"
+    "\.jpg$"
+    "\.jpeg$"
+    "\.gif$"
+    "\.svg$"
+    "\.ico$"
+    "\.pdf$"
+    "\.xcassets/"
+    "\.pbxproj$"
+)
+
+# Fonction pour vérifier si un fichier doit être ignoré
+should_ignore() {
+    local file=$1
+    for pattern in "${IGNORE_PATTERNS[@]}"; do
+        if echo "$file" | grep -qE "$pattern"; then
+            return 0
+        fi
+    done
+    return 1
+}
+
+# Récupérer les fichiers staged
+FILES=$(git diff --cached --name-only --diff-filter=ACM)
+
+if [ -z "$FILES" ]; then
+    echo -e "${GREEN}✓ Aucun fichier à vérifier${NC}"
+    exit 0
+fi
+
+FOUND_ISSUES=0
+CHECKED_FILES=0
+
+# Vérifier chaque fichier
+for FILE in $FILES; do
+    # Ignorer les fichiers binaires et certains types
+    if should_ignore "$FILE"; then
+        continue
+    fi
+    
+    # Vérifier si le fichier existe (peut avoir été supprimé)
+    if [ ! -f "$FILE" ]; then
+        continue
+    fi
+    
+    CHECKED_FILES=$((CHECKED_FILES + 1))
+    
+    # Vérifier chaque pattern
+    for PATTERN in "${PATTERNS[@]}"; do
+        # Recherche insensible à la casse
+        MATCHES=$(git diff --cached "$FILE" | grep -iE "$PATTERN" | grep "^\+" | grep -v "^\+\+\+")
+        
+        if [ ! -z "$MATCHES" ]; then
+            if [ $FOUND_ISSUES -eq 0 ]; then
+                echo -e "\n${RED}⚠️  ATTENTION: Informations sensibles détectées!${NC}\n"
+            fi
+            
+            echo -e "${RED}Fichier: $FILE${NC}"
+            echo -e "${YELLOW}Pattern détecté: $PATTERN${NC}"
+            echo -e "Lignes concernées:"
+            echo "$MATCHES" | sed 's/^/  /'
+            echo ""
+            
+            FOUND_ISSUES=$((FOUND_ISSUES + 1))
+        fi
+    done
+done
+
+echo -e "${GREEN}✓ $CHECKED_FILES fichier(s) vérifié(s)${NC}"
+
+# Si des problèmes ont été trouvés
+if [ $FOUND_ISSUES -gt 0 ]; then
+    echo -e "\n${RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+    echo -e "${RED}❌ COMMIT BLOQUÉ: $FOUND_ISSUES problème(s) détecté(s)${NC}"
+    echo -e "${RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+    echo -e "\n${YELLOW}Actions recommandées:${NC}"
+    echo -e "  1. Retirez les informations sensibles des fichiers"
+    echo -e "  2. Utilisez des variables d'environnement"
+    echo -e "  3. Ajoutez les fichiers sensibles à .gitignore"
+    echo -e "  4. Utilisez un fichier .env (et ajoutez-le à .gitignore)"
+    echo -e "\n${YELLOW}Pour forcer le commit (NON RECOMMANDÉ):${NC}"
+    echo -e "  git commit --no-verify"
+    echo ""
+    exit 1
+fi
+
+echo -e "${GREEN}✓ Aucune information sensible détectée${NC}\n"
+exit 0
